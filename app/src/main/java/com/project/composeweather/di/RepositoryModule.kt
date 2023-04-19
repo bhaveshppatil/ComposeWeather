@@ -1,9 +1,8 @@
-package com.plcoding.weatherapp.di
+package com.project.composeweather.di
 
-import com.plcoding.weatherapp.data.location.DefaultLocationTracker
-import com.plcoding.weatherapp.data.repository.WeatherRepositoryImpl
-import com.plcoding.weatherapp.domain.location.LocationTracker
-import com.plcoding.weatherapp.domain.repository.WeatherRepository
+
+import com.project.composeweather.data.repository.WeatherRepositoryImpl
+import com.project.composeweather.domain.repository.WeatherRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

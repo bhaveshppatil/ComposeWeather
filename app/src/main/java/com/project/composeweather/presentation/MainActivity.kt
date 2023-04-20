@@ -20,6 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.project.composeweather.presentation.theme.ComposeWeatherTheme
+import com.project.composeweather.presentation.theme.Purple200
 import com.project.composeweather.presentation.theme.Purple500
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -54,16 +55,16 @@ class MainActivity : ComponentActivity() {
                     ) {
                         WeatherCard(
                             state = viewModel.state,
-                            backgroundColor = Purple500
+                            backgroundColor = Purple200
                         )
                         Spacer(modifier = Modifier.height(16.dp))
                         WeatherForecast(state = viewModel.state)
                     }
-                    if (viewModel.state.isLoading) {
+                  /*  if (viewModel.state.isLoading) {
                         CircularProgressIndicator(
                             modifier = Modifier.align(Alignment.Center)
                         )
-                    }
+                    }*/
                     viewModel.state.error?.let {
                         Text(
                             text = it,
